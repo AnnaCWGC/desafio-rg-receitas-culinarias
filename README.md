@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-### Você deverá implementar o máximo de funcionalidades descritas abaixo e enviar dentor do prazo proposto pela empresa.
+### Você deverá implementar o máximo de funcionalidades descritas abaixo e enviar dentro do prazo proposto pela empresa.
 
 ## Funcionalidades
 

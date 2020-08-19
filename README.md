@@ -24,7 +24,7 @@
 
 ## Banco de Dados
 
-* Dentro dos Arquivos que estão sendo enviados a você tem uma pata chamada __banco__, lá você vai encontrar detalhes sobre a modelagem do banco de dados e os scripts para criação do banco de dados
+* Dentro dos Arquivos que estão sendo enviados a você tem uma pasta chamada __banco__, lá você vai encontrar detalhes sobre a modelagem do banco de dados e os scripts para criação do banco de dados
 
 ## Regra de Negócio
 

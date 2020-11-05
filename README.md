@@ -1,4 +1,4 @@
-# Vaga Desenvolvedor WEB
+# Vaga Desenvolvedor
 
 ## Objetivo
 
@@ -24,16 +24,33 @@
 
 ## Banco de Dados
 
-* Dentro dos Arquivos que estão sendo enviados a você tem uma pasta chamada __banco__, lá você vai encontrar detalhes sobre a modelagem do banco de dados e os scripts para criação do banco de dados
-
-## Regra de Negócio
-
-* Toda Regra de Negócio estára em uma pasta chamada __regra__ , lá você vai encontrar detalhes de como cada funcionalidade deverá ser, juntamente com telas conceito para você se basear.
+* Dentro dos Arquivos que estão sendo enviados a você tem uma pasta chamada __banco__, lá você vai encontrar detalhes sobre a modelagem do banco de dados e os scripts para criação do banco de dados em SQL
 
 ## Restrições
 
+### Desenvolvedor WEB ( FullStack )
+
 * Você deverá utilizar Javascript (Node.js) para construção da API que se comunicará com o Frontend.
 
-* No Frontend você deverá utilizar a biblioteca Vue.js para construção do sistema.
+* No Frontend você deverá utilizar a biblioteca Vue.js ou React para construção do sistema.
 
 * Para o Banco e dados você deve utilizar Mysql.
+
+### Desenvolvedor Mobile
+
+* Você deverá utilizar React Native para construir o seu App
+
+* Para o Banco de dados você pode utilizar qualquer banco de dados, desde que os dados sejam realmente persistidos e recuperados em um novo Login
+
+* A Criação de uma nova conta pode ser feita apenas localmente, guardando as informaçoes do usuario para o Login
+
+* Para o Mobile não é preciso implementar a parte de impressão.
+
+* Não é necessário implementar um backend, apenas o app.
+
+
+
+
+
+
+

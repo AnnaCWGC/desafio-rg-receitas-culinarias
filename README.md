@@ -36,6 +36,8 @@
 
 * Para o Banco e dados você deve utilizar Mysql.
 
+* Colocar um passo a passo de como rodar o sistema.
+
 ### Desenvolvedor Mobile
 
 * Você deverá utilizar React Native para construir o seu App
@@ -48,9 +50,4 @@
 
 * Não é necessário implementar um backend, apenas o app.
 
-
-
-
-
-
-
+* Gerar o APK para funcionamento no Sistema Android  e enviar juntamente com o código.

@@ -30,11 +30,11 @@
 
 ### Desenvolvedor WEB ( FullStack )
 
-* Você deverá utilizar Javascript (Node.js) para construção da API que se comunicará com o Frontend.
+* Você deverá utilizar Node.js com JS ou TS para a construção de um backend API seguindo os padrões RESTful.
 
-* No Frontend você deverá utilizar a biblioteca Vue.js ou React para construção do sistema.
+* No Frontend, você deverá utilizar a biblioteca Vue.js para construção do cliente que se comunicará com o backend.
 
-* Para o Banco e dados você deve utilizar Mysql.
+* Para o Banco de dados, você deverá utilizar o MySQL.
 
 * Colocar um passo a passo de como rodar o sistema.
 

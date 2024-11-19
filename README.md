@@ -23,10 +23,11 @@ Nos arquivos enviados, você encontrará uma pasta chamada **banco**, que conté
 
 ### Desenvolvedor Web (FullStack)
 
-* Utilize Node.js com JavaScript ou TypeScript para construir uma API backend seguindo os padrões RESTful.
+* Utilize Node.js com TypeScript para construir uma API backend seguindo o padrão RESTful.
 * No frontend, utilize a biblioteca Vue.js para construir o cliente que se comunicará com o backend.
 * Para o banco de dados, utilize MySQL.
 * Inclua um passo a passo detalhado de como rodar o sistema.
+* Diferenciais: Documentação de API (swagger), docker e testes (unitários e e2e).
 
 ### Desenvolvedor Mobile
 
@@ -34,5 +35,5 @@ Nos arquivos enviados, você encontrará uma pasta chamada **banco**, que conté
 * Para o banco de dados, você pode utilizar qualquer solução, desde que os dados sejam persistidos e recuperáveis em um novo login.
 * A criação de uma nova conta pode ser realizada localmente, armazenando as informações do usuário para login.
 * Não é necessário implementar a funcionalidade de impressão no app mobile.
-* Não é necessário implementar um backend, apenas o aplicativo.
+* Não é necessário implementar um backend, apenas o aplicativo (mas seria um diferencial).
 * Gere o APK para funcionamento no sistema Android e envie-o juntamente com o código.

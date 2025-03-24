@@ -1,8 +1,8 @@
-# Vaga de Desenvolvedor
+# Vaga de Desenvolvedor / Tech Lead
 
 ## Objetivo
 
-Você deverá implementar o máximo de funcionalidades descritas abaixo e enviar o projeto dentro do prazo proposto pela empresa.
+O desafio consiste em implementar o máximo de funcionalidades descritas abaixo e enviar o projeto dentro do prazo estabelecido pela empresa.
 
 ## Funcionalidades
 
@@ -10,30 +10,31 @@ Você deverá implementar o máximo de funcionalidades descritas abaixo e enviar
 * Login de usuário.
 * Logoff de usuário.
 * Cadastro de receitas pelo usuário.
-* Pesquisa de uma receita do usuário.
-* Edição de uma receita pelo usuário.
-* Exclusão de uma receita pelo usuário.
-* Impressão de uma receita pelo usuário.
+* Pesquisa de receitas cadastradas pelo usuário.
+* Edição de uma receita.
+* Exclusão de uma receita.
+* Impressão de uma receita.
 
 ## Banco de Dados
 
-Nos arquivos enviados, você encontrará uma pasta chamada **banco**, que contém detalhes sobre a modelagem do banco de dados e scripts SQL para sua criação.
+Nos arquivos enviados, há uma pasta chamada **banco**, que contém detalhes sobre a modelagem do banco de dados e scripts SQL para sua criação.
 
 ## Restrições
 
-### Desenvolvedor Web (FullStack)
+### Desenvolvedor Web (Full Stack)
 
-* Utilize Node.js com TypeScript para construir uma API backend seguindo o padrão RESTful.
-* No frontend, utilize a biblioteca Vue.js para construir o cliente que se comunicará com o backend.
-* Para o banco de dados, utilize MySQL.
-* Inclua um passo a passo detalhado de como rodar o sistema.
-* Diferenciais: Documentação de API (swagger), docker e testes (unitários e e2e).
+* Utilize **Node.js** com **TypeScript** para construir uma **API RESTful** no backend.
+* No frontend, utilize **Vue.js** para criar a interface que se comunicará com o backend.
+* O banco de dados deve ser **MySQL**.
+* Inclua um **guia detalhado** explicando como rodar o sistema.
+* **Diferenciais:** Documentação de API (**Swagger**), uso de **Docker** e implementação de **testes unitários e de integração (E2E)**.  
+  _Para nível **Tech Lead**, esses itens são obrigatórios._
 
 ### Desenvolvedor Mobile
 
-* Utilize React Native para construir o aplicativo.
-* Para o banco de dados, você pode utilizar qualquer solução, desde que os dados sejam persistidos e recuperáveis em um novo login.
-* A criação de uma nova conta pode ser realizada localmente, armazenando as informações do usuário para login.
-* Não é necessário implementar a funcionalidade de impressão no app mobile.
-* Não é necessário implementar um backend, apenas o aplicativo (mas seria um diferencial).
-* Gere o APK para funcionamento no sistema Android e envie-o juntamente com o código.
+* Utilize **React Native** para desenvolver o aplicativo.
+* O banco de dados pode ser qualquer solução, desde que os dados sejam **persistidos e recuperáveis** em um novo login.
+* A criação de uma nova conta pode ser realizada localmente, armazenando os dados para login posterior.
+* **Não é necessário implementar a funcionalidade de impressão** no app mobile.
+* **Não é obrigatório desenvolver um backend**, mas isso será considerado um diferencial.
+* Gere um **APK funcional** para Android e envie-o junto com o código-fonte.

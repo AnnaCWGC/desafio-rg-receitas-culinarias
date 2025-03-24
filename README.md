@@ -21,7 +21,7 @@ Nos arquivos enviados, há uma pasta chamada **banco**, que contém detalhes sob
 
 ## Restrições
 
-### Desenvolvedor Web (Full Stack)
+### Desenvolvedor Web - Full Stack / Tech Lead
 
 * Utilize **Node.js** com **TypeScript** para construir uma **API RESTful** no backend.
 * No frontend, utilize **Vue.js** para criar a interface que se comunicará com o backend.

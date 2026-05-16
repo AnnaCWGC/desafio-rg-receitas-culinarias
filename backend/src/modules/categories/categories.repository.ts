@@ -9,4 +9,8 @@ export class CategoriesRepository {
   async findAll(): Promise<Category[]> {
     return database<Category>('categorias').select('*').orderBy('nome', 'asc');
   }
+
+  async findById(id: number): Promise<Category | undefined> {
+    return database<Category>('categorias').where({ id }).first();
+  }
 }

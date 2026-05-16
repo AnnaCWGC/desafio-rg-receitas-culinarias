@@ -55,7 +55,7 @@ Campos principais:
 
 Regras de negócio, arquiteturais e de modelagem iniciais:
 
-- Uma receita pertence a um usuário (1 pra 1).
+- uma receita pertence a um usuário, e um usuário pode ter várias receitas (relação 1 pra N).
 - O frontend não deve enviar `id_usuarios` livremente.
 - O backend deve identificar o usuário da receita a partir da autenticação.
 - Categorias serão carregadas a partir da seed inicial.

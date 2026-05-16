@@ -5,11 +5,14 @@
   "main": "index.js",
   
   "scripts": {
-    "dev": "tsx watch src/server.ts",
-    "build": "tsc",
-    "start": "node dist/server.js",
-    "test": "vitest",
-    "knex": "knex --knexfile knexfile.ts"
+  "dev": "tsx watch src/server.ts",
+  "build": "tsc",
+  "start": "node dist/server.js",
+  "test": "vitest",
+  "knex": "knex --knexfile knexfile.cjs",
+  "migrate": "knex --knexfile knexfile.cjs migrate:latest",
+  "rollback": "knex --knexfile knexfile.cjs migrate:rollback",
+  "seed": "knex --knexfile knexfile.cjs seed:run"
   },
 
   "keywords": [],

@@ -1,5 +1,5 @@
 import request from 'supertest';
-import { app } from '../../app';
+import { app } from '../app';
 
 async function createAuthenticatedUser(login = 'anna') {
   await request(app).post('/auth/register').send({

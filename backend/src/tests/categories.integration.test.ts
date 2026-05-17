@@ -1,5 +1,5 @@
 import request from 'supertest';
-import { app } from '../../app';
+import { app } from '../app';
 
 describe('Categories routes', () => {
   it('listar as categorias semeadas', async () => {

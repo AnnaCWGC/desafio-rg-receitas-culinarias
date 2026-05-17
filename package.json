@@ -1,0 +1,9 @@
+{
+  "name": "desafio-rg-receitas-culinarias",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "project:init": "node scripts/project-init.js",
+    "project:reset": "node scripts/project-init.js --reset"
+  }
+}

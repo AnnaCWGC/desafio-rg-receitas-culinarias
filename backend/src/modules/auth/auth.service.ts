@@ -16,11 +16,7 @@ type LoginResponse = {
 };
 
 export class AuthService {
-  private usersRepository: UsersRepository;
-
-  constructor() {
-    this.usersRepository = new UsersRepository();
-  }
+  constructor(private usersRepository = new UsersRepository()) {}
 
   // Registra um novo usuário
   async register(data: RegisterBody): Promise<AuthenticatedUserResponse> {

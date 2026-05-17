@@ -21,13 +21,10 @@ type RecipeResponse = {
 };
 
 export class RecipesService {
-  private recipesRepository: RecipesRepository;
-  private categoriesRepository: CategoriesRepository;
-
-  constructor() {
-    this.recipesRepository = new RecipesRepository();
-    this.categoriesRepository = new CategoriesRepository();
-  }
+  constructor(
+    private recipesRepository = new RecipesRepository(),
+    private categoriesRepository = new CategoriesRepository(),
+  ) {}
     
   // Retorna todas as receitas ordenadas por nome
   async findAll(

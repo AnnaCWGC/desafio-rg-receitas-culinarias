@@ -1,29 +1,54 @@
 import { StyleSheet } from 'react-native';
 
+import { colors, radius } from '../../../styles/theme';
+
 export const styles = StyleSheet.create({
-  container: {
+  keyboardContainer: {
     flex: 1,
+    backgroundColor: colors.background,
   },
-  content: {
-    flex: 1,
+  container: {
+    flexGrow: 1,
     justifyContent: 'center',
     padding: 24,
-    gap: 12,
+  },
+  brandContainer: {
+    alignItems: 'center',
+    marginBottom: 28,
+  },
+  logoCircle: {
+    width: 72,
+    height: 72,
+    borderRadius: 36,
+    backgroundColor: '#e8f0ff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 16,
+  },
+  logoIcon: {
+    fontSize: 34,
+    color: colors.primary,
+    fontWeight: '700',
   },
   title: {
     fontSize: 28,
-    fontWeight: '700',
-    marginBottom: 16,
+    fontWeight: '800',
+    color: colors.text,
     textAlign: 'center',
   },
-  input: {
-    borderWidth: 1,
-    borderColor: '#cccccc',
-    borderRadius: 8,
-    paddingHorizontal: 12,
-    paddingVertical: 10,
-  },
-  secondaryButton: {
+  subtitle: {
     marginTop: 8,
+    fontSize: 15,
+    color: colors.textMuted,
+    textAlign: 'center',
+    lineHeight: 22,
+  },
+  card: {
+    borderRadius: radius.lg,
+    backgroundColor: colors.surface,
+    padding: 18,
+    gap: 14,
+    borderWidth: 1,
+    borderColor: colors.border,
   },
 });

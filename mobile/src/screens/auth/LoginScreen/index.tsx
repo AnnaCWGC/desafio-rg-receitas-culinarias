@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import {
   Alert,
-  Button,
   KeyboardAvoidingView,
   Platform,
+  ScrollView,
   Text,
-  TextInput,
   View,
 } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
+import { ActionButton } from '../../../components/ActionButton';
+import { FormInput } from '../../../components/FormInput';
 import { useAuth } from '../../../contexts/AuthContext';
 import { AuthStackParamList } from '../../../navigation/types';
 import { getApiErrorMessage } from '../../../utils/getApiErrorMessage';
@@ -26,9 +27,19 @@ export function LoginScreen({ navigation }: Props) {
 
   async function handleLogin() {
     try {
+      if (!login.trim()) {
+        Alert.alert('Validação', 'Informe seu login.');
+        return;
+      }
+
+      if (!password.trim()) {
+        Alert.alert('Validação', 'Informe sua senha.');
+        return;
+      }
+
       setSubmitting(true);
 
-      await signIn(login, password);
+      await signIn(login.trim(), password);
     } catch (error) {
       Alert.alert('Erro ao entrar', getApiErrorMessage(error));
     } finally {
@@ -38,44 +49,55 @@ export function LoginScreen({ navigation }: Props) {
 
   return (
     <KeyboardAvoidingView
-      style={styles.container}
+      style={styles.keyboardContainer}
       behavior={Platform.select({
         ios: 'padding',
         android: undefined,
       })}
     >
-      <View style={styles.content}>
-        <Text style={styles.title}>Receitas Culinárias</Text>
+      <ScrollView
+        contentContainerStyle={styles.container}
+        keyboardShouldPersistTaps="handled"
+      >
+        <View style={styles.brandContainer}>
 
-        <TextInput
-          style={styles.input}
-          placeholder="Login"
-          autoCapitalize="none"
-          value={login}
-          onChangeText={setLogin}
-        />
+          <Text style={styles.title}>Receitas Culinárias</Text>
 
-        <TextInput
-          style={styles.input}
-          placeholder="Senha"
-          secureTextEntry
-          value={password}
-          onChangeText={setPassword}
-        />
+          <Text style={styles.subtitle}>
+            Organize suas receitas favoritas em um só lugar.
+          </Text>
+        </View>
 
-        <Button
-          title={submitting ? 'Entrando...' : 'Entrar'}
-          onPress={handleLogin}
-          disabled={submitting}
-        />
+        <View style={styles.card}>
+          <FormInput
+            label="Login"
+            placeholder="Digite seu login"
+            autoCapitalize="none"
+            value={login}
+            onChangeText={setLogin}
+          />
 
-        <View style={styles.secondaryButton}>
-          <Button
+          <FormInput
+            label="Senha"
+            placeholder="Digite sua senha"
+            secureTextEntry
+            value={password}
+            onChangeText={setPassword}
+          />
+
+          <ActionButton
+            title={submitting ? 'Entrando...' : 'Entrar'}
+            disabled={submitting}
+            onPress={handleLogin}
+          />
+
+          <ActionButton
             title="Criar conta"
+            variant="outline"
             onPress={() => navigation.navigate('Register')}
           />
         </View>
-      </View>
+      </ScrollView>
     </KeyboardAvoidingView>
   );
 }

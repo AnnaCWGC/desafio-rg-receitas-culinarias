@@ -10,12 +10,22 @@ const Stack = createNativeStackNavigator<AppStackParamList>();
 
 export function AppNavigator() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{
+        headerShadowVisible: false,
+        headerStyle: {
+          backgroundColor: '#f6f7fb',
+        },
+        contentStyle: {
+          backgroundColor: '#f6f7fb',
+        },
+      }}
+    >
       <Stack.Screen
         name="RecipesList"
         component={RecipesListScreen}
         options={{
-          title: 'Minhas receitas',
+          title: '',
         }}
       />
 
@@ -23,7 +33,7 @@ export function AppNavigator() {
         name="RecipeDetails"
         component={RecipeDetailsScreen}
         options={{
-          title: 'Detalhe da receita',
+          title: '',
         }}
       />
 
@@ -31,7 +41,7 @@ export function AppNavigator() {
         name="RecipeForm"
         component={RecipeFormScreen}
         options={{
-          title: 'Receita',
+          title: '',
         }}
       />
     </Stack.Navigator>

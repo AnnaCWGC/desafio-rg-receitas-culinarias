@@ -9,12 +9,22 @@ const Stack = createNativeStackNavigator<AuthStackParamList>();
 
 export function AuthNavigator() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{
+        headerShadowVisible: false,
+        headerStyle: {
+          backgroundColor: '#f6f7fb',
+        },
+        contentStyle: {
+          backgroundColor: '#f6f7fb',
+        },
+      }}
+    >
       <Stack.Screen
         name="Login"
         component={LoginScreen}
         options={{
-          title: 'Entrar',
+          headerShown: false,
         }}
       />
 
@@ -22,7 +32,7 @@ export function AuthNavigator() {
         name="Register"
         component={RegisterScreen}
         options={{
-          title: 'Cadastrar',
+          title: '',
         }}
       />
     </Stack.Navigator>

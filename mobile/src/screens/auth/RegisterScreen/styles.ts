@@ -1,20 +1,37 @@
 import { StyleSheet } from 'react-native';
 
+import { colors, radius } from '../../../styles/theme';
+
 export const styles = StyleSheet.create({
-  container: {
+  keyboardContainer: {
     flex: 1,
+    backgroundColor: colors.background,
   },
-  content: {
-    flex: 1,
+  container: {
+    flexGrow: 1,
     justifyContent: 'center',
     padding: 24,
-    gap: 12,
   },
-  input: {
+  header: {
+    marginBottom: 24,
+  },
+  title: {
+    fontSize: 26,
+    fontWeight: '800',
+    color: colors.text,
+  },
+  subtitle: {
+    marginTop: 8,
+    fontSize: 15,
+    color: colors.textMuted,
+    lineHeight: 22,
+  },
+  card: {
+    borderRadius: radius.lg,
+    backgroundColor: colors.surface,
+    padding: 18,
+    gap: 14,
     borderWidth: 1,
-    borderColor: '#cccccc',
-    borderRadius: 8,
-    paddingHorizontal: 12,
-    paddingVertical: 10,
+    borderColor: colors.border,
   },
 });
